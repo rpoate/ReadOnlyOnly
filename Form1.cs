@@ -73,6 +73,14 @@ namespace ReadOnlyOnly
         private void HtmlEditControl1_DocumentLoadComplete(object sender, EventArgs e)
         {
             this.htmlEditControl1.Document.Body.SetAttribute("contenteditable", "false");
+
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["ContextWYSIWYGCut"]);
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["ContextWYSIWYGPaste"]);
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["TablePropertiesToolStripMenuItem"]);
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["ImagePropetiesToolStripMenuItem"]);
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["LinkPropertiesToolStripMenuItem"]);
+            this.htmlEditControl1.ContextMenuWYSIWYG.Items.Remove(this.htmlEditControl1.ContextMenuWYSIWYG.Items["ToolStripMenuItem1"]);
+
         }
 
         private void copyToolStripButton_Click(object sender, EventArgs e)
