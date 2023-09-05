@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ReadOnlyOnly
@@ -40,7 +32,11 @@ namespace ReadOnlyOnly
 
         private void HtmlEditControl1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Control == false) e.SuppressKeyPress = true;
+            if (e.Control == false)
+            { 
+                e.SuppressKeyPress = true;
+                return;
+            }
 
             if (e.KeyCode == Keys.V || e.KeyCode == Keys.X) e.SuppressKeyPress = true;
 
