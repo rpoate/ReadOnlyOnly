@@ -25,7 +25,7 @@ namespace ReadOnlyOnly
                 "<table width=\"100%\" style=\"border: 3px dotted green\"><tr><td>test1</td></tr><td>test1</td></tr><td>test1</td></tr></table><br />" +
                 "<table width=\"100%\"><tr><td>test1</td><td>test1</td><td>test1</td></tr><td>test1</td><td>test1</td><td>test1</td></tr><td>test1</td><td>test1</td><td>test1</td></tr></table>";
 
-            this.htmlEditControl1.CSSText = "body {font-family: Calibri; background-image: url('https://www.w3schools.com/cssref/paper.gif'); background-size: cover;} table, th, tr, td {border: none !important;}";
+            this.htmlEditControl1.CSSText = "* {caret-color: transparent;} body {font-family: Calibri; background-image: url('https://www.w3schools.com/cssref/paper.gif'); background-size: cover;} table, th, tr, td {border: none !important;}";
             this.htmlEditControl1.ZoomLevel = 100;
 
         }
